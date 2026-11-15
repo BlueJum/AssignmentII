@@ -1,4 +1,48 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
 
+<!-- Card with a header wrapping the form.
+       Source: Bootstrap 5.0 docs, Cards > Header and footer
+       https://getbootstrap.com/docs/5.0/components/card/#header-and-footer -->
+<div class="card mx-auto mb-4 mt-3">
+  <div class="card-header">
+   <i class="fa-solid fa-pencil"></i> Contact me 
+  </div>
+  <div class="card-body">
+    <p class="card-text">Send me your questions, comments, or project-related queries!</p>
+    <form action="mailto:archer.keshtkarbagheri@ontariotechu.net" method="post" enctype="text/plain">
+        <div class="mb-3">
+            <label for="name" class="form-label">Your name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Lara Croft" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Your Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone number</label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="123-456-7890" required>
+        </div>
+        <div class="mb-3">
+            <label for="subject" class="form-label">Reason for contact</label>
+            <select class="form-select" id="subject" name="subject">
+                <option value="general">General inquiry</option>
+                <option value="collaboration">Project collaboration</option>
+                <option value="academic">Academic inquiry</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="comments" class="form-label">Comments / Questions</label>
+            <textarea class="form-control" id="comments" name="comments" rows="5" placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Submit</i></button>
+        <button type="reset" class="btn btn-secondary">Reset form</button>
+    </form>
+  </div>   
+</div>
+
+
+
 <%- include partials/footer.ejs %>
