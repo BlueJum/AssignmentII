@@ -22,8 +22,7 @@ npm install
 npm start
 
 ## Citations
-- Course lecture code (INFR3120): express-generator project setup, app.js, server.js,
-  navbar and partials structure.
+- All edited codes were written based on week 7-8 documents and recorded lectures of the web and scripting programming course taught by professor. Ahmed Munieb Sheikh.
 - Bootstrap 5.0.2 Cards (Header and footer, Horizontal, Grid cards), adapted for the
   Home, About, Projects and Contact pages:
   https://getbootstrap.com/docs/5.0/components/card/
@@ -32,5 +31,3 @@ npm start
   Bootstrap: Mark Otto, Jacob Thornton and Bootstrap contributors. Code MIT licensed,
   docs CC BY 3.0.
 - Font Awesome Free icons: https://fontawesome.com/
-- Page text, project descriptions, photo and video are my own work, reused from my
-  Assignment 1 content. The HTML markup was rewritten as EJS with Bootstrap.
