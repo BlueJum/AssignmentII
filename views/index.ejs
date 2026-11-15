@@ -1,13 +1,17 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
-<div class="card text-center mb-4">
+
+<!-- Card with header, body and button adapted from Bootstrap 5.0 docs, Cards > Header and footer: 
+ https://getbootstrap.com/docs/5.0/components/card/#header-and-footer -->
+
+<div class="card text-center mb-4 mx-3 mt-3">
   <div class="card-header">
    <i class="fa-solid fa-user-secret"></i> Archer Keshtkar Bagheri 
   </div>
   <div class="card-body">
     <h5 class="card-title">Welcome to my portfolio!</h5>
-    <p class="card-text">This personal portfolio showcases my web development skills, coursework, and technical projects built with modern HTML5 and CSS3.</p>
-    <a href="/projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i>View my projects</a>
+    <p class="card-text">This personal portfolio showcases my web development skills, coursework, and technical projects.</p>
+    <a href="/projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> View my projects</a>
   </div>
 </div>
 <%- include partials/footer.ejs %>
