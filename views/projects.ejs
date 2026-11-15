@@ -1,4 +1,26 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
 
+<div class="card text-center mb-4">
+  <div class="card-body">
+    <h5 class="card-title">My networking and security projects</h5>
+    <p class="card-text">These projects showcase proficiency in: Traditional cryptography, EIGRP implementation for IPV4, EIGRP implementation for IPV6 and VRF-lite implementation.</p>
+  </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <% projects.forEach(function(project) { %>
+    <div class="col">
+      <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fa-solid <%= project.icon %>"></i> <%= project.name %></h5>
+        <p class="card-text"><%= project.description %></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><%= project.tag %></small>
+      </div>
+    </div>
+  </div>
+  <% }) %>
+</div>
 <%- include partials/footer.ejs %>

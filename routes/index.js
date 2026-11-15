@@ -18,7 +18,33 @@ router.get('/about', function(req, res, next) {
 
 /* GET project page. */
 router.get('/projects', function(req, res, next) {
-  res.render('projects', { title: 'Projects' });
+  const projects = [
+    {
+      name: 'Cryptography',
+      icon: 'fa-lock',
+      tag: 'Caeser, Vigenere, Playfair',
+      description: 'Traditional ciphers encode messages in a way that only those with the secret key can decode it. In my first project I have practiced encryption and decryption using ciphers such as Caesar cipher, Vigenere cipher and playfair cipher.'
+    },
+    {
+      name: 'Cryptography',
+      icon: 'fa-lock',
+      tag: 'Caeser, Vigenere, Playfair',
+      description: 'Traditional'
+    },
+    {
+      name: 'Cryptography',
+      icon: 'fa-lock',
+      tag: 'Caeser, Vigenere, Playfair',
+      description: 'Traditional'
+    },
+    {
+      name: 'Cryptography',
+      icon: 'fa-lock',
+      tag: 'Caeser, Vigenere, Playfair',
+      description: 'Traditional'
+    },
+  ]
+  res.render('projects', { title: 'Projects', projects: projects });
 });
 
 /* GET contact page. */
