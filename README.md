@@ -8,7 +8,7 @@ Personal portfolio website built with Node.js, Express and EJS.
 ## Pages
 - Home (`/` and `/home`): views/index.ejs
 - About (`/about`): views/about.ejs
-- Projects (`/projects`): views/projects.ejs (cards built from data in the route)
+- Projects (`/projects`): views/projects.ejs
 - Contact (`/contact`): views/contact.ejs
 
 ## Technologies
