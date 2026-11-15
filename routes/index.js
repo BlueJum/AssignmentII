@@ -13,17 +13,17 @@ router.get('/home', function(req, res, next) {
 
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About me' });
+  res.render('index', { title: 'About me' });
 });
 
 /* GET project page. */
 router.get('/projects', function(req, res, next) {
-  res.render('projects', { title: 'Projects' });
+  res.render('index', { title: 'Projects' });
 });
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Contact me' });
+  res.render('index', { title: 'Contact me' });
 });
 
 
